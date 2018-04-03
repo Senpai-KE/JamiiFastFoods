@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+
+      <title>Jamii Fast Foods</title>
+      <link rel="shortcut icon" href="images/favicon.ico"/>
+
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <link href="css/style.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/Footer-with-social-icons.css">
+      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+      <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+      <link href="vendor/jquery/jquery.js">
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="scripts/functions.js"></script>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script>
+        $(document).ready(function(){
+          $("#myBtn").click(function(){
+            $("#myModal").modal();
+          });
+          $("#create").click(function(){
+            $("#createModal").modal();
+          });
+          $("#myBtn2").click(function(){
+            $("#myModal").modal();
+          });
+          $("#sign_up").click(function(){
+            $("#createModal").modal();
+          });
+          $("#form_btn").click(function(){
+            $("#listModal").modal();
+          });
+          $("#forgotPassword").click(function(){
+            $("#forgotPasswrd").modal();
+          });
+          $("#forgotPword").click(function(){
+            $("#forgotPasswrd").modal();
+          });
+        });
+      </script>
+
+  </head>
+
+  <body style="padding-top: 0px;">
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-static-top" style="background-color: #333333; padding-bottom: 10px; position: absolute;">
+      <a class="jamii text-center animated rubberBand navbar-brand" href="index.html">Jamiii Fast Foods</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+      <div class="container" id="navbarResponsive">
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav ml-auto navbar-right hover">
+            <!--hover menu-->
+            <li class="nav-item hoverli">
+              <div class="dropdown">
+                <a class="nav-link" data-toggle="dropdown" href="#" style="padding-top: 14px;"><span class="glyphicon glyphicon-user"></span> Account</a>
+                  <ul class="dropdown-menu">
+                    <li id="myBtn"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    <li id="create"><a href="#"><span class="glyphicon glyphicon-user"></span> Create Account</a></li>
+                  </ul>
+              </div>
+            </li>
+            <!--menu-->
+            <li class="nav-item">
+              <a class="nav-link" href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container" style="padding-top: 20px; padding-bottom: 50px;">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="animated fadeIn">
+            <h3 class="my-4" style="color: white;">Menu</h3>
+            <div class="list-group">
+              <a href="single.html" class="list-group-item">Single Meals</a>
+              <a href="family.html" class="list-group-item">Family Deals</a>
+              <a href="night.html" class="list-group-item">Night Deals</a>
+              <a href="other.html" class="list-group-item">Other Deals</a>
+            </div>
+          </div>
+        </div>
+
+      <div class="col-lg-9" style="padding-top: 60px;">
+        <div id="carousel" class="carousel slide" data-ride="carousel" style="padding-bottom: 20px;">
+          <ol class="carousel-indicators">
+              <li data-target="#carousel" data-slide-to="0"></li>
+              <li data-target="#carousel" data-slide-to="1"></li>
+              <li data-target="#carousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="item active">
+                  <img class="d-block w-100" src="images/carousel3.jpg" alt="First slide">
+              </div>
+              <div class="item">
+                  <img class="d-block w-100" src="images/carousel1.png" alt="Second slide">
+              </div>
+              <div class="item">
+                  <img class="d-block w-100" src="images/carousel2.jpg" alt="Third slide">
+              </div>
+          </div>
+          <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+      <div class="animated fadeIn">
+        <div class="row" id="row">
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="jumbopack.html"><img class="card-img-top" src="images/jumbo.jpg"></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="jumbopack.html">JumboPack</a>
+                </h4>
+                <h5>Ksh.1500</h5>
+                <p class="card-text">A litre of soda, Two packs of fries and a full roast chicken</p>
+              </div>
+              <div class="card-footer">
+                <a class="animated fadeIn" href="jumbopack.html"><small class="text-muted">Reviews</small></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="family_night.html"><img class="card-img-top" src="images/family.jpeg"></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="family_night.html">Family Night</a>
+                </h4>
+                <h5>Ksh.3000</h5>
+                <p class="card-text">An extravangant pack full of roast meat, fries & Two litres of soda</p>
+              </div>
+              <div class="card-footer">
+                <a class="animated fadeIn" href="family_night.html"><small class="text-muted">Reviews</small></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="date_night.html"><img class="card-img-top" src="images/couple.jpeg"></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="date_night.html">Date Night</a>
+                </h4>
+                <h5>Ksh.1000</h5>
+                <p class="card-text">Two soda's, fries & a magical gift for the significant other</p>
+              </div>
+              <div class="card-footer">
+                <a class="animated fadeIn" href="date_night.html"><small class="text-muted">Reviews</small></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="bro.html"><img class="card-img-top" src="images/bro2.jpg" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="bro.html">Bro Night</a>
+                </h4>
+                <h5>Ksh.2500</h5>
+                <p class="card-text">Roast meat, 5 fries & a six pack of beer</p>
+              </div>
+              <div class="card-footer">
+                <a class="animated fadeIn" href="bro.html"><small class="text-muted">Reviews</small></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="girls.html"><img class="card-img-top" src="images/girls2.jpg" height=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="girls.html">Girls Night</a>
+                </h4>
+                <h5>Ksh.2000</h5>
+                <p class="card-text">A litre of soda with 5 fries and a full chicken</p>
+              </div>
+              <div class="card-footer">
+                <a class="animated fadeIn" href="girls.html"><small class="text-muted">Reviews</small></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="traditional.html"><img class="card-img-top" src="images/african.jpg" height="140"></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="traditional.html">Traditional Meal</a>
+                </h4>
+                <h5>Ksh.500</h5>
+                <p class="card-text">Get a random meal with an African Twist</p>
+              </div>
+              <div class="card-footer">
+                <a class="animated fadeIn" href="traditional.html"><small class="text-muted">Reviews</small></a>
+              </div>
+            </div>
+          </div>
+        </div><!--row ends here-->
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+</div>
+      </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header" style="background-color: #333333; padding:10px;">
+            <h3 style="color: white; padding-left: 10px;">Get in Here:</h3>
+            <button type="button" class="close" data-dismiss="modal" style="padding-bottom:30px; padding-right: 20px;color:white;">&times;</button>
+          </div>
+          <div class="modal-body" style="padding:40px 50px;">
+            <form role="form">
+              <div class="form-group">
+                <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+                <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+              </div>
+              <div class="form-group">
+                <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+                <input type="password" class="form-control" id="psw" placeholder="Enter password">
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" value="checked"> Remember me</label>
+              </div>
+                <button type="submit" class="btn btn-block" style="background-color: #333333;"> <p style="color: white; text-align: center; padding-top: 10px;">Login</p></button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button id="forgotPassword" type="submit" class="w3-button w3-block" data dismiss="modal" style="text-align:center; padding-left: 0px;"><a href="#">Forgot Password?</a></button>
+            <button id="sign_up" type="submit" class="w3-button w3-block" data-dismiss="modal" style="text-align:center; padding-left: 0px;"><a href="#">Sign Up</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for create account -->
+    <div class="modal fade" id="createModal" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header" style="background-color: #333333; padding:10px;">
+            <h3 style="color: white; padding-left: 10px;">Join Us:</h3>
+            <button type="button" class="close" data-dismiss="modal" style="padding-bottom:30px; padding-right: 20px;color:white;">&times;</button>
+          </div>
+          <div class="modal-body" style="padding:40px 50px;">
+            <form role="form">
+              <div class="form-group">
+                <label for="name">First Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter First name">
+              </div>
+              <div class="form-group">
+                <label for="lstname">Last Name</label>
+                <input type="text" class="form-control" id="lstname" placeholder="Enter last name">
+              </div>
+              <div class="form-group">
+                <label for="usrname">Username</label>
+                <input type="text" class="form-control" id="usrname" placeholder="Enter username">
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="text" class="form-control" id="email" placeholder="Enter email address">
+              </div>
+              <div class="form-group">
+                <label for="psw">Password</label>
+                <input type="password" class="form-control" id="psw" placeholder="Enter password">
+              </div>
+              <div class="form-group">
+                <label for="psw">Confirm Password</label>
+                <input type="password" class="form-control" id="psw" placeholder="confirm password">
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" value="checked"> Show Password</label>
+              </div>
+                <button type="submit" class="btn btn-block" style="background-color: #333333;"> <p style="color: white; text-align: center; padding-top: 10px;">Sign Up</p></button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button id="forgotPword" type="submit" class="w3-button w3-block" data dismiss="modal" style="text-align:center; padding-left: 0px;"><a href="#" id="forgotPassword">Forgot Password?</a></button>
+            <button id="myBtn2" type="submit" class="w3-button w3-block" data-dismiss="modal" tyle="text-align:center; padding-left: 0px;"><a href="#" id="myBtn2">Sign In</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal forgot password -->
+    <div class="modal fade" id="forgotPasswrd" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header" style="background-color: #333333; padding:10px;">
+            <h3 style="color: white; padding-left: 10px;">Whoops:</h3>
+            <button type="button" class="close" data-dismiss="modal" style="padding-bottom:30px; padding-right: 20px;color:white;">&times;</button>
+          </div>
+          <div class="modal-body" style="padding:40px 50px;">
+            <form role="form" id="password_form">
+              <div class="form-group">
+                <label for="email"><span class="glyphicon glyphicon-email"></span>Enter your Email, a recovery link will be sent to you:</label>
+                <input type="text" class="form-control" id="email" placeholder="Enter email">
+              </div>
+              <button type="submit" class="btn btn-block" data-dismiss="modal" style="background-color: #333333;" onclick="clearform()"> <p style="color: white; text-align: center; padding-top: 10px;">Send</p></button>
+          </div>
+          <div class="modal-footer">
+            <button id="myBtn2" type="submit" class="w3-button w3-block" data-dismiss="modal" style="text-align:center; padding-left: 0px;"><a href="#">Sign In</a></button>
+            <button id="sign_up" type="submit" class="w3-button w3-block" data-dismiss="modal" style="text-align:center; padding-left: 0px;"><a href="#">Sign Up</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer id="myFooter" style="width: 100%;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 myCols" style="padding-right: ;">
+                    <h5>Get started</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Account</a></li>
+                        <li><a href="#">Cart</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 myCols" style="padding-left: px;">
+                    <h5>About us</h5>
+                    <ul>
+                        <li><a href="faq.html"></a>FAQ</li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 myCols">
+                    <h5>Support</h5>
+                    <ul>
+                      <li><a href="contact.html">Contact Us</a></li>
+                      <li><a href="#">ChatBot</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 myCols social-networks" style="padding-top: 0px;">
+                    <h5>Social Media</h5>
+                    <ul>
+                      <a href="#" class="twitter"><i class="fa fa-twitter" style="padding-bottom: 10px;" id="twitter"></i></a>
+                      <a href="#" class="facebook"><i class="fa fa-facebook-official" id="facebook"></i></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright" style="padding-left: 0px;">
+            <p><i>©Jamii Fast Foods 2018 </i></p>
+        </div>
+    </footer>
+  </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</html>

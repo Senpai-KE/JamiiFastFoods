@@ -1,0 +1,81 @@
+body {
+  padding-top: 0px;
+  background-image: url("giraffe.jpg");
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+a{
+  background-color: transparent !important;
+}
+
+hr{
+  text-align: center;
+  position: relative;
+}
+
+#myFooter{
+  position: relative;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.nav-link{
+  padding: 5px;
+}
+.jamii{
+  position: absolute;
+  float: none;
+  width:100%;
+  z-index: -111;
+}
+
+ul, li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav{
+  position: absolute;
+  width: 100%;
+  background-color: ;
+}
+
+.menu{
+
+}
+
+.dropdown{
+  position: relative;
+  background-color: transparent;
+}
+
+.dropdown-menu{
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+
+}
+
+.dropdown-menu li{
+  background-color: transparent;
+}
+
+.dropdown-menu li a{
+  text-decoration:none;
+  padding:10px;
+  display: inline-block;
+}
+
+.dropdown-menu li a:hover{
+
+  font-weight: bold;
+}
