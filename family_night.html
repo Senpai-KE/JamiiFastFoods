@@ -2,7 +2,7 @@
 <html lang="en">
 
   <head>
-    
+
     <title>Jamii Fast Foods</title>
     <link rel="shortcut icon" href="images/favicon.ico"/>
 
@@ -38,8 +38,14 @@
         $("#sign_up").click(function(){
           $("#createModal").modal();
         });
-        $("#fortbtn").click(function(){
-          $("#formodal").modal();
+        $("#form_btn").click(function(){
+          $("#listModal").modal();
+        });
+        $("#forgotPassword").click(function(){
+          $("#forgotPasswrd").modal();
+        });
+        $("#forgotPword").click(function(){
+          $("#forgotPasswrd").modal();
         });
       });
     </script>
@@ -174,7 +180,7 @@
             </form>
           </div>
           <div class="modal-footer">
-            <button id="forbtn" type="submit" class="w3-button w3-block" data dismiss="modal" style="text-align:center; padding-left: 0px;"><a href="#">Forgot Password?</a></button>
+            <button id="forgotPassword" type="submit" class="w3-button w3-block" data dismiss="modal" style="text-align:center; padding-left: 0px;"><a href="#">Forgot Password?</a></button>
             <button id="sign_up" type="submit" class="w3-button w3-block" data-dismiss="modal" style="text-align:center; padding-left: 0px;"><a href="#">Sign Up</a></button>
           </div>
         </div>
@@ -224,7 +230,7 @@
             </form>
           </div>
           <div class="modal-footer">
-            <button id="forbtn" type="submit" class="w3-button w3-block" data dismiss="modal" style="text-align:center; padding-left: 0px;"><a href="#">Forgot Password?</a></button>
+            <button id="forgotPword" type="submit" class="w3-button w3-block" data dismiss="modal" style="text-align:center; padding-left: 0px;"><a href="#">Forgot Password?</a></button>
             <button id="myBtn2" type="submit" class="w3-button w3-block" data-dismiss="modal" tyle="text-align:center; padding-left: 0px;"><a href="#" id="myBtn2">Sign In</a></button>
           </div>
         </div>
@@ -232,7 +238,7 @@
     </div>
 
     <!-- Modal forgot password -->
-    <div class="modal fade" id="formodal" role="dialog">
+    <div class="modal fade" id="forgotPasswrd" role="dialog">
       <div class="modal-dialog">
 
         <!-- Modal content-->
@@ -242,11 +248,12 @@
             <button type="button" class="close" data-dismiss="modal" style="padding-bottom:30px; padding-right: 20px;color:white;">&times;</button>
           </div>
           <div class="modal-body" style="padding:40px 50px;">
-            <form role="form">
+            <form role="form" id="password_form">
               <div class="form-group">
-                <label for="email"><span class="glyphicon glyphicon-email"></span> Enter Email:</label>
+                <label for="email"><span class="glyphicon glyphicon-email"></span>Enter your Email, a recovery link will be sent to you:</label>
                 <input type="text" class="form-control" id="email" placeholder="Enter email">
               </div>
+              <button type="submit" class="btn btn-block" data-dismiss="modal" style="background-color: #333333;" onclick="clearform()"> <p style="color: white; text-align: center; padding-top: 10px;">Send</p></button>
           </div>
           <div class="modal-footer">
             <button id="myBtn2" type="submit" class="w3-button w3-block" data-dismiss="modal" style="text-align:center; padding-left: 0px;"><a href="#">Sign In</a></button>

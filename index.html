@@ -22,6 +22,25 @@
       <link href="vendor/jquery/jquery.js">
       <script src="vendor/jquery/jquery.min.js"></script>
       <script src="scripts/functions.js"></script>
+      <script>
+      //show password function
+      function pword(){
+        var x = document.getElementById("input");
+        if(x.type === "password"){
+          x.type = "text";
+        }else{
+          x.type = "password";
+        }
+      }
+      function pword2(){
+        var y = document.getElementById("input2");
+        if(y.type === "password"){
+          y.type = "text";
+        }else{
+          y.type = "password";
+        }
+      }
+      </script>
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -311,14 +330,14 @@
               </div>
               <div class="form-group">
                 <label for="psw">Password</label>
-                <input type="password" class="form-control" id="psw" placeholder="Enter password">
+                <input type="password" class="form-control" id="input" placeholder="Enter password">
               </div>
               <div class="form-group">
                 <label for="psw">Confirm Password</label>
-                <input type="password" class="form-control" id="psw" placeholder="confirm password">
+                <input type="password" class="form-control" id="input2" placeholder="confirm password">
               </div>
               <div class="checkbox">
-                <label><input type="checkbox" value="checked"> Show Password</label>
+                <label><input type="checkbox" onclick="pword()"> Show Password</label>
               </div>
                 <button type="submit" class="btn btn-block" style="background-color: #333333;"> <p style="color: white; text-align: center; padding-top: 10px;">Sign Up</p></button>
             </form>
